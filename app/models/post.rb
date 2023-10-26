@@ -2,11 +2,11 @@ class Post < ApplicationRecord
   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
   has_many :comments
   has_many :likes
-  
+
   after_create :update_post_counter
 
   def five_most_recent_comments
-    self.comments.order(created_at: :desc).limit(5)
+    comments.order(created_at: :desc).limit(5)
   end
 
   private
