@@ -32,9 +32,10 @@ The Blog app is a simple and classic blog app that allows users to create posts 
 
 ### Key Features <a name="key-features"></a>
 
-- **Implementing the MVC pattern**
-- **Implementing the model layer using Ruby classes**
-- **Implementing the migration files**
+- **Post implementation**
+  - Users can create posts
+  - Users can like posts
+  - Users can comment on posts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
