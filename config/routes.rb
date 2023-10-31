@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "users#index"
   get "users/:id", to: "users#user"
   get "users/:id/posts", to: "posts#posts"
+  get "users/:id/posts/:id", to: "posts#post"
   resources :users, only: [:index, :show] do
     resources :posts, only: [:index, :show]
   end
