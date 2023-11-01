@@ -29,5 +29,12 @@ RSpec.describe 'Users', type: :request do
       expect(response.body).to include('Root view')
       expect(response).to render_template(:index)
     end
+
+    it 'response status was correct for /users/:id' do
+      get '/users/:234'
+      expect(response.status).to eq(200)
+      expect(response.body).to include('User page')
+      expect(response).to render_template(:show)
+    end
   end
 end
