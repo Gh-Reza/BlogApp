@@ -1,1 +1,7 @@
-Root view
+<ul>
+  <% @users.each do |user| %>
+    <h4><%= user.id %></h4>
+    <li><h1><%= user.name %></h1></li>
+    <h4>Number of posts: <%= user.posts.count %></h4>
+  <% end %>
+</ul>
