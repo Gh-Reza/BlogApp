@@ -1,1 +1,20 @@
-User page
+<div>
+  <div>
+    <h1><%= @user.name %></h1>
+    <h4>Number of posts: <%= @user.posts.count %></h4>
+  </div>
+  <div>
+    <h4><strong>Bio</strong></h4>
+    <p><%= @user.bio %></p>
+  </div>
+  <div>
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <h4>Post: #<%= post.id %></h4>
+          <p><%= post.text %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
