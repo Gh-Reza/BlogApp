@@ -1,1 +1,21 @@
-Posts for the specified user
+<div style="border: #2E2F30">
+  <h1><%= @user.name %></h1>
+  <h4>Number of posts<%= @posts.count %></h4>
+</div>
+
+<div>
+  <% @posts.each do |post| %>
+    <div>
+      <div>
+        <h4>Post #<%= post.id %></h4>
+        <p><%=post.text %></p>
+        <p>Comments: <%=post.comments.count %>, Likes: <%= post.likes.count %></p>
+      </div>
+      <div>
+        <% post.comments.each do |comment| %>
+          <p><%= comment.user.name %>: <%= comment.text %></p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
