@@ -1,1 +1,29 @@
-User page
+<section class="user-posts-section">
+  <div class="user-item">
+    <div class="image-box">
+      <img src="<% @user.photo %>" alt="user photo">
+    </div>
+    <div class="user-info-box">
+      <h1 class="user-name"><%= @user.name %></h1>
+      <h4 class="posts-count">Number of posts: <%= @user.posts.count %></h4>
+    </div>
+  </div>
+  <div class="bio-box border">
+    <h4><strong>Bio</strong></h4><br>
+    <p><%= @user.bio %></p>
+  </div>
+  <div class="user-posts-box">
+    <ul class="user-posts-list">
+      <% @posts.each do |post| %>
+        <li class="user-posts-item border">
+          <div>
+            <h4>Post: #<%= post.id %></h4>
+            <p><%= post.text %></p>
+          </div>
+          <p class="comments-likes-count">Comments: <%=post.comments.count %>, Likes: <%= post.likes.count %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <%= link_to "See all posts", user_posts_path(@user), class: "btn"%>
+</section>
