@@ -91,3 +91,17 @@ section {
     font-size: 18px;
     cursor: pointer;
 }
+
+.posts-comments {
+    margin-top: 32px;
+}
+
+.posts-comments-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comments-box {
+    padding: 24px;
+}
