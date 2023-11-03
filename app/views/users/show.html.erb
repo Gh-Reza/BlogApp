@@ -1,20 +1,26 @@
-<div>
-  <div>
-    <h1><%= @user.name %></h1>
-    <h4>Number of posts: <%= @user.posts.count %></h4>
+<section class="user-posts-section">
+  <div class="user-item">
+    <div class="image-box">
+      <img src="<% @user.photo %>" alt="user photo">
+    </div>
+    <div class="user-info-box">
+      <h1 class="user-name"><%= @user.name %></h1>
+      <h4 class="posts-count">Number of posts: <%= @user.posts.count %></h4>
+    </div>
   </div>
-  <div>
-    <h4><strong>Bio</strong></h4>
+  <div class="bio-box border">
+    <h4><strong>Bio</strong></h4><br>
     <p><%= @user.bio %></p>
   </div>
-  <div>
-    <ul>
+  <div class="user-posts-box">
+    <ul class="user-posts-list">
       <% @posts.each do |post| %>
-        <li>
+        <li class="user-posts-item border">
           <h4>Post: #<%= post.id %></h4>
           <p><%= post.text %></p>
         </li>
       <% end %>
     </ul>
   </div>
-</div>
+  <button class="btn">See all posts</button>
+</section>
