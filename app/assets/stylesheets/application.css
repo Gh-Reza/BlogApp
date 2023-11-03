@@ -105,3 +105,11 @@ section {
 .comments-box {
     padding: 24px;
 }
+
+.post-box {
+    padding: 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}

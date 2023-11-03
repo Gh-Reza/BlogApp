@@ -1,12 +1,14 @@
-<div>
-  <div>
-    <h4>Post #<%= @post.id %> by <%= @post.author.name %></h4>
+<section>
+  <div class="post-box border">
+    <div>
+      <h4>Post #<%= @post.id %> by <%= @post.author.name %></h4>
+      <p><%= @post.text %></p>
+    </div>
     <p>Comments: <%= @post.comments.count %>, Likes: <%= @post.likes.count %></p>
-    <p><%= @post.text %></p>
   </div>
-  <div>
+  <div class="comments-box border">
     <% @comments.each do |comment| %>
       <p><%=comment.user.name %>: <%= comment.text %></p>
     <% end %>
   </div>
-</div>
+</section>
