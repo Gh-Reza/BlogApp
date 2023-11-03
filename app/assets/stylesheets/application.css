@@ -1,115 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 body {
-    font-family: sans-serif;
-    padding: 64px;
+  font-family: sans-serif;
+  padding: 64px;
 }
 
 h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h3 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 section {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .border {
-    border: solid;
+  border: solid;
 }
 
 .user-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .user-item {
-    border: solid;
-    display: flex;
-    gap: 24px;
-    padding: 24px;
-    cursor: pointer;
+  border: solid;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  cursor: pointer;
 }
 
 .user-info-box {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .posts-count {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .user-name {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 .user-posts-section {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .user-posts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .user-posts-item {
-    padding: 24px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .comments-likes-count {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .bio-box {
-    padding: 24px;
+  padding: 24px;
 }
 
 .btn {
-    border: none;
-    padding: 12px;
-    background-color: #333;
-    color: #ddd;
-    font-size: 18px;
-    cursor: pointer;
+  border: none;
+  padding: 12px;
+  background-color: #333;
+  color: #ddd;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .posts-comments {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 .posts-comments-box {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .comments-box {
-    padding: 24px;
+  padding: 24px;
 }
 
 .post-box {
-    padding: 24px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 32px;
+  padding: 24px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 32px;
 }
