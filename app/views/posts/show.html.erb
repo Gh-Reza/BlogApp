@@ -6,6 +6,15 @@
     </div>
     <p>Comments: <%= @post.comments.count %>, Likes: <%= @post.likes.count %></p>
   </div>
+  <div class="add-comment-box">
+    <h2>New Comment:</h2>
+    <%= form_with model: @comment, url: comments_path, local: true, method: :post do |form| %>
+      <%= form.hidden_field :post_id, value: @post.id %>
+      <%= form.label :comment %>
+      <%= form.text_area :comment %>
+      <%= form.submit "Add comment" %>
+    <% end %>
+  </div>
   <div class="comments-box border">
     <% @comments.each do |comment| %>
       <p><%=comment.user.name %>: <%= comment.text %></p>
