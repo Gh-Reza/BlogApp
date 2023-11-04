@@ -1,9 +1,4 @@
 class CommentsController < ApplicationController
-  def new
-    @comment = Comment.new# frozen_string_literal: true
-    @post = Post.find(params[:id])
-  end
-
   def create
     @current_user = current_user
     @post = Post.find(params[:post_id])
