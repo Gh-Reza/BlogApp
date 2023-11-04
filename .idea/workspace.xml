@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43bf5cb8-c26b-410b-b622-0a6e336a4a4d" name="Changes" comment="Add the form for adding new post">
-      <change afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-    </list>
+    <list default="true" id="43bf5cb8-c26b-410b-b622-0a6e336a4a4d" name="Changes" comment="Added form for adding comments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,7 +245,7 @@
       <updated>1699009943155</updated>
       <workItem from="1699009950506" duration="154000" />
       <workItem from="1699032457175" duration="9037000" />
-      <workItem from="1699104439409" duration="8318000" />
+      <workItem from="1699104439409" duration="8695000" />
     </task>
     <task id="LOCAL-00001" summary="Create the current_user method">
       <option name="closed" value="true" />
@@ -268,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699108477513</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added form for adding comments">
+      <option name="closed" value="true" />
+      <created>1699117455474</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699117455474</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +318,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create the current_user method" />
     <MESSAGE value="Add the form for adding new post" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the form for adding new post" />
+    <MESSAGE value="Added form for adding comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added form for adding comments" />
   </component>
 </project>

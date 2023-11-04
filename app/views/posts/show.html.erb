@@ -10,8 +10,8 @@
     <h2>New Comment:</h2>
     <%= form_with model: @comment, url: comments_path, local: true, method: :post do |form| %>
       <%= form.hidden_field :post_id, value: @post.id %>
-      <%= form.label :comment %>
-      <%= form.text_area :comment %>
+      <%= form.label :comment %><br>
+      <%= form.text_area :comment %><br>
       <%= form.submit "Add comment" %>
     <% end %>
   </div>
