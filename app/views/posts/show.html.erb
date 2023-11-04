@@ -4,7 +4,22 @@
       <h4>Post #<%= @post.id %> by <%= @post.author.name %></h4>
       <p><%= @post.text %></p>
     </div>
-    <p>Comments: <%= @post.comments.count %>, Likes: <%= @post.likes.count %></p>
+    <div>
+      <p>Comments: <%= @post.comments.count %>, Likes: <%= @post.likes.count %></p>
+      <%= form_with model: @like, url: likes_path, local: true, method: :post do |form|%>
+        <%= form.hidden_field :post_id, value: @post.id %>
+        <%= form.submit "Like" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="add-comment-box">
+    <h2>New Comment:</h2>
+    <%= form_with model: @comment, url: comments_path, local: true, method: :post do |form| %>
+      <%= form.hidden_field :post_id, value: @post.id %>
+      <%= form.label :comment %><br>
+      <%= form.text_area :comment %><br>
+      <%= form.submit "Add comment" %>
+    <% end %>
   </div>
   <div class="comments-box border">
     <% @comments.each do |comment| %>
