@@ -31,8 +31,6 @@ The Blog app is a simple and classic blog app that allows users to create posts 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-- **Post implementation**
   - Users can create posts
   - Users can like posts
   - Users can comment on posts
@@ -120,7 +118,7 @@ This app is under consturction...
 
 - 👤 GitHub:   [Gh-Reza](https://github.com/Gh-Reza)
 - 👤 Twitter:  [RezaMerzaie97](https://twitter.com/RezaMerzaie97)
-- 👤 LinkedIn: [Safari](https://www.linkedin.com/in/reza-merzaie)
+- 👤 LinkedIn: [reza-merzaie](https://www.linkedin.com/in/reza-merzaie)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
