@@ -40,8 +40,8 @@ RSpec.describe 'Users show page', type: :feature do
   end
 
   scenario 'I can see the comment each commentor left.' do
-      expect(page).to have_content(@comment1.text)
-      expect(page).to have_content(@comment2.text)
-      expect(page).to have_content(@comment3.text)
+    expect(page).to have_content(@comment1.text)
+    expect(page).to have_content(@comment2.text)
+    expect(page).to have_content(@comment3.text)
   end
 end
