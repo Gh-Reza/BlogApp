@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43bf5cb8-c26b-410b-b622-0a6e336a4a4d" name="Changes" comment="Modified the view">
-      <change afterPath="$PROJECT_DIR$/app/controllers/likes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    <list default="true" id="43bf5cb8-c26b-410b-b622-0a6e336a4a4d" name="Changes" comment="Updated the README.md">
+      <change beforePath="$PROJECT_DIR$/spec/features/post_show_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/post_show_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +22,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -39,7 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;form&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;integration-test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -252,6 +255,7 @@
       <workItem from="1699009950506" duration="154000" />
       <workItem from="1699032457175" duration="9037000" />
       <workItem from="1699104439409" duration="10857000" />
+      <workItem from="1699378594454" duration="7414000" />
     </task>
     <task id="LOCAL-00001" summary="Create the current_user method">
       <option name="closed" value="true" />
@@ -285,7 +289,63 @@
       <option name="project" value="LOCAL" />
       <updated>1699117524915</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Removed n+1 problem from posts_controller">
+      <option name="closed" value="true" />
+      <created>1699366730509</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699366730509</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added necessary gems to Gemfile">
+      <option name="closed" value="true" />
+      <created>1699371948677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699371948677</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added tests for User index page">
+      <option name="closed" value="true" />
+      <created>1699380941278</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699380941278</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added tests for User show page">
+      <option name="closed" value="true" />
+      <created>1699383640398</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699383640398</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create the test file for Post index page">
+      <option name="closed" value="true" />
+      <created>1699384491756</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699384491756</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add the tests for Post show page">
+      <option name="closed" value="true" />
+      <created>1699387187708</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699387187708</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated the README.md">
+      <option name="closed" value="true" />
+      <created>1699387379411</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699387379411</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +397,16 @@
     <MESSAGE value="Add the form for adding new post" />
     <MESSAGE value="Added form for adding comments" />
     <MESSAGE value="Modified the view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified the view" />
+    <MESSAGE value="Removed n+1 problem from posts_controller" />
+    <MESSAGE value="Added necessary gems to Gemfile" />
+    <MESSAGE value="Added tests for User index page" />
+    <MESSAGE value="Added tests for User show page" />
+    <MESSAGE value="Create the test file for Post index page" />
+    <MESSAGE value="Add the tests for Post show page" />
+    <MESSAGE value="Updated the README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the README.md" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BlogApp@BlogApp.rcov" NAME="BlogApp Coverage Results" MODIFIED="1699366280181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BlogApp" />
   </component>
 </project>
