@@ -16,7 +16,6 @@ class UsersController < ApplicationController
     else
       render json: { errors: user.errors }, status: 422
     end
-
   end
 
   private
