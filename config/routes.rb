@@ -1,9 +1,22 @@
 Rails.application.routes.draw do
+  
   root "users#index"
   devise_for :users
   resources :users do
-    resources :posts
+    resources :posts do
+      resources :comments
+      resources :likes
+    end
   end
-  resources :comments, only: [:new, :create]
-  resources :likes, only: [:new, :create]
+
+  namespace :api do
+    namespace :v1 do
+      resources :users do
+        resources :posts do
+          resources :comments
+          resources :likes
+        end
+      end
+    end
+  end
 end
