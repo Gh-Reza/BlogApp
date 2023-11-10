@@ -90,6 +90,7 @@ section {
   color: #ddd;
   font-size: 18px;
   cursor: pointer;
+  width: 90%;
 }
 
 .posts-comments {
