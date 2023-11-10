@@ -90,6 +90,7 @@ section {
   color: #ddd;
   font-size: 18px;
   cursor: pointer;
+  width: 90%;
 }
 
 .posts-comments {
@@ -112,4 +113,19 @@ section {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 32px;
+}
+
+.login-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  padding: 24px;
+}
+
+.input {
+  width: 90%;
+  height: 32px;
+  margin-bottom: 24px;
 }
